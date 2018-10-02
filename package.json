@@ -1,0 +1,23 @@
+{
+  "name": "react-scratch",
+  "version": "1.0.0",
+  "description": "React from scratch with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adelsagemilang/react-scratch.git"
+  },
+  "keywords": [
+    "react",
+    "scratch"
+  ],
+  "author": "Adelsa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adelsagemilang/react-scratch/issues"
+  },
+  "homepage": "https://github.com/adelsagemilang/react-scratch#readme"
+}
