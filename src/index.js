@@ -1,13 +1,14 @@
+import React, { Component } from 'react';
+import { render } from 'react-dom';
 import _ from 'lodash';
 import './style.css'
 
-function component() {
-  let element = document.createElement('div');
-
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-
-  return element;
+export default class HelloReact extends Component {
+	render() {
+		return (
+			<div className="hello">Hello React</div>
+		);
+	}
 }
 
-document.body.appendChild(component());
+render(<HelloReact />, document.getElementById('root'));
