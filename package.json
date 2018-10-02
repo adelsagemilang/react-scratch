@@ -2,9 +2,10 @@
   "name": "react-scratch",
   "version": "1.0.0",
   "description": "React from scratch with webpack",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/adelsagemilang/react-scratch/issues"
   },
-  "homepage": "https://github.com/adelsagemilang/react-scratch#readme"
+  "homepage": "https://github.com/adelsagemilang/react-scratch#readme",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
 }
