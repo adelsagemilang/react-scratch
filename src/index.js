@@ -2,15 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux'
 import {BrowserRouter} from 'react-router-dom'
+
 import store from './store'
-import './styles/style.css';
-import App from './components/App';
+
+import './styles/style.css'
+
+// main routes
+import AppRoutes from './routes'
 
 
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
-            <App/>
+            <AppRoutes />
         </BrowserRouter>
     </Provider>
     , document.getElementById('root'));
