@@ -13,8 +13,6 @@ import AppRoutes from './routes'
 
 ReactDOM.render(
     <Provider store={store}>
-        <BrowserRouter>
-            <AppRoutes />
-        </BrowserRouter>
+        <AppRoutes />
     </Provider>
     , document.getElementById('root'));
