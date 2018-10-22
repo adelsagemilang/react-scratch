@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
-import _ from 'lodash';
-import './style.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux'
+import {BrowserRouter} from 'react-router-dom'
+import store from './store'
+import './styles/style.css';
+import App from './components/App';
 
-export default class HelloReact extends Component {
-	render() {
-		return (
-			<div className="hello">Hello React</div>
-		);
-	}
-}
 
-render(<HelloReact />, document.getElementById('root'));
+ReactDOM.render(
+    <Provider store={store}>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
+    </Provider>
+    , document.getElementById('root'));
